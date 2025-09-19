@@ -1,0 +1,24 @@
+<header>
+  <nav class="navbar">
+    <div class="nav-brand">
+      <h1>☕ Café Delicia</h1>
+    </div>
+    <ul class="nav-menu">
+      <li><a routerLink="/" routerLinkActive="active" (click)="onLinkClick()">Inicio</a></li>
+      <li><a routerLink="/nosotros" routerLinkActive="active" (click)="onLinkClick()">Nosotros</a></li>
+      <li><a routerLink="/productos" routerLinkActive="active" (click)="onLinkClick()">Productos</a></li>
+    </ul>
+  </nav>
+</header>
+
+<main>
+  <router-outlet></router-outlet>
+</main>
+
+<footer class="footer">
+  <div class="footer-content">
+    <p>© 2023 Café Delicia - Todos los derechos reservados</p>
+    <p>Horario: Lunes a Domingo de 7:00 am a 9:00 pm</p>
+    <p>Dirección: Av. Principal #123, Ciudad</p>
+  </div>
+</footer>

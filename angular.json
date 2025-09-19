@@ -13,22 +13,20 @@
         "build": {
           "builder": "@angular/build:application",
           "options": {
+            "outputPath": "dist/browser",
+            "index": "src/index.html",
             "browser": "src/main.ts",
+            "polyfills": ["src/polyfills.ts"],
             "tsConfig": "tsconfig.app.json",
             "assets": [
-              {
-                "glob": "**/*",
-                "input": "public"
-              }
+              "src/favicon.ico",
+              "src/assets"
             ],
             "styles": [
               "src/styles.css"
             ],
-            "server": "src/main.server.ts",
-            "outputMode": "server",
-            "ssr": {
-              "entry": "src/server.ts"
-            }
+            "scripts": [],
+            "ssr": false
           },
           "configurations": {
             "production": {
@@ -74,10 +72,8 @@
           "options": {
             "tsConfig": "tsconfig.spec.json",
             "assets": [
-              {
-                "glob": "**/*",
-                "input": "public"
-              }
+              "src/favicon.ico",
+              "src/assets"
             ],
             "styles": [
               "src/styles.css"
@@ -86,5 +82,8 @@
         }
       }
     }
+  },
+  "cli": {
+    "analytics": "a4085814-3b9a-448c-9b15-aa55a4015f73"
   }
 }

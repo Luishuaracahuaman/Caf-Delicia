@@ -1,0 +1,145 @@
+.about-container {
+  max-width: 1200px;
+  margin: 0 auto;
+  padding: 2rem;
+}
+
+.about-header {
+  text-align: center;
+  margin-bottom: 4rem;
+  padding: 2rem 0;
+}
+
+.about-header h1 {
+  font-size: 3rem;
+  color: #3e2723;
+  margin-bottom: 1rem;
+}
+
+.about-subtitle {
+  font-size: 1.3rem;
+  color: #6d4c41;
+  max-width: 600px;
+  margin: 0 auto;
+  line-height: 1.6;
+}
+
+.story-section {
+  margin-bottom: 4rem;
+}
+
+.story-content {
+  display: grid;
+  grid-template-columns: 1fr 1fr;
+  gap: 3rem;
+  align-items: center;
+}
+
+.story-text h2 {
+  color: #3e2723;
+  margin-bottom: 1.5rem;
+  font-size: 2rem;
+}
+
+.story-text p {
+  color: #6d4c41;
+  line-height: 1.8;
+  margin-bottom: 1.5rem;
+  font-size: 1.1rem;
+}
+
+.story-image {
+  text-align: center;
+}
+
+.story-img {
+  width: 100%;
+  max-width: 400px;
+  border-radius: 15px;
+  box-shadow: 0 15px 35px rgba(0, 0, 0, 0.2);
+}
+
+.values-section {
+  margin-bottom: 4rem;
+}
+
+.values-grid {
+  display: grid;
+  grid-template-columns: repeat(auto-fit, minmax(300px, 1fr));
+  gap: 2rem;
+  margin-top: 2rem;
+}
+
+.value-card {
+  background: white;
+  padding: 2rem;
+  border-radius: 15px;
+  box-shadow: 0 10px 30px rgba(0, 0, 0, 0.1);
+  text-align: center;
+}
+
+.value-card h3 {
+  color: #3e2723;
+  margin-bottom: 1rem;
+  font-size: 1.4rem;
+}
+
+.value-card p {
+  color: #6d4c41;
+  line-height: 1.6;
+}
+
+.team-section {
+  margin-bottom: 2rem;
+}
+
+.team-grid {
+  display: grid;
+  grid-template-columns: repeat(auto-fit, minmax(250px, 1fr));
+  gap: 2rem;
+  margin-top: 2rem;
+}
+
+.team-member {
+  background: white;
+  padding: 2rem;
+  border-radius: 15px;
+  text-align: center;
+  box-shadow: 0 10px 30px rgba(0, 0, 0, 0.1);
+}
+
+.team-member img {
+  width: 120px;
+  height: 120px;
+  border-radius: 50%;
+  object-fit: cover;
+  margin-bottom: 1rem;
+  border: 4px solid #d7ccc8;
+}
+
+.team-member h4 {
+  color: #3e2723;
+  margin-bottom: 0.5rem;
+  font-size: 1.2rem;
+}
+
+.team-member p {
+  color: #6d4c41;
+  font-style: italic;
+}
+
+@media (max-width: 768px) {
+  .story-content {
+    grid-template-columns: 1fr;
+    text-align: center;
+  }
+  
+  .about-header h1 {
+    font-size: 2.2rem;
+  }
+  
+  .values-grid,
+  .team-grid {
+    grid-template-columns: 1fr;
+  }
+}
